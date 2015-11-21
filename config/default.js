@@ -1,9 +1,9 @@
 module.exports = {
     port: 6666,
     uid_try_max_count: 5,
-    cookie_secret: 'hinagata-backend',
+    cookie_secret: 'hinagata-express',
     locals: {
-        title: 'hinagata-backend',
+        title: 'hinagata-express',
         description: 'node.js service.',
         url: 'http://localhost:6666/'
     }

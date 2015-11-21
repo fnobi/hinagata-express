@@ -1,5 +1,5 @@
 module.exports = {
     locals: {
-        url: "http://hinagata-backend.example.com/"
+        url: "http://hinagata-express.example.com/"
     }
 };
