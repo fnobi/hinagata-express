@@ -1,6 +1,6 @@
 {
   "name": "hinagata-backend",
-  "description": "node.js service.",
+  "description": "node.js service server.",
   "version": "0.1.0",
   "scripts": {
     "test": "NODE_ENV=test mocha --reporter spec",
