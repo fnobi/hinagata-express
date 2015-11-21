@@ -1,0 +1,8 @@
+if items.length
+  ul.item-list
+    each item in items
+      - var href = "/item/" + item.uid
+      li: a(href=href)= item.name
+else
+  div.item-empty
+    p nothing.

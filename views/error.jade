@@ -1,0 +1,17 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title= title
+  body
+    section.error
+      h1= statusCode
+      case statusCode
+        when 500
+          h2 Internal Server Error
+          p= error
+        when 404
+          h2 Not Found
+        default
+          h2 Error
+          p= error
