@@ -1,25 +1,4 @@
-var config = require('config');
-var Sequelize = require('sequelize');
-
-var sequelize = new Sequelize(
-    config.database.database,
-    config.database.user,
-    config.database.password,
-    {
-        dialect: 'postgres',
-        pool: {
-            max: 5,
-            min: 0,
-            idle: 10000
-        }
-    }
-);
-
-
-
-
-
-
-
-
-
+module.exports = {
+    database: require(`${__dirname}/database`),
+    User: require(`${__dirname}/User`)
+};
