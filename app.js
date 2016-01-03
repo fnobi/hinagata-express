@@ -5,6 +5,7 @@ var config = require('config');
 var extParser = require(__dirname + '/lib/ext-parser');
 
 var routes = require(__dirname + '/routes');
+var models = require(__dirname + '/models');
 
 var app = express();
 

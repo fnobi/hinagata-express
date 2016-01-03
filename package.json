@@ -8,11 +8,14 @@
     "start": "NODE_ENV=production forever start --sourceDir . --pidFile hinagata-express.example.com.pid -l hinagata-express.example.com.log --append server.js"
   },
   "dependencies": {
-    "config": "0.4.*",
     "async": "0.2.*",
     "chai": "1.6.*",
+    "config": "0.4.*",
     "express": "3.3.*",
     "jade": "1.5.*",
-    "request": "2.48.*"
+    "pg": "4.4.*",
+    "pg-hstore": "2.3.*",
+    "request": "2.48.*",
+    "sequelize": "3.15.*"
   }
 }
