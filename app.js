@@ -1,13 +1,12 @@
-var express = require('express');
-var path = require('path');
-var config = require('config');
+const express = require('express');
+const path = require('path');
+const config = require('config');
 
-var extParser = require(__dirname + '/lib/ext-parser');
+const extParser = require(`${__dirname}/lib/ext-parser`);
+const routes = require(`${__dirname}/routes`);
+const models = require(`${__dirname}/models`);
 
-var routes = require(__dirname + '/routes');
-var models = require(__dirname + '/models');
-
-var app = express();
+const app = express();
 
 
 // =======================================================
@@ -19,7 +18,7 @@ app.set('view engine', 'jade');
 app.use(express.bodyParser());
 app.use(express.cookieParser(config.cookie_secret));
 app.use(express.methodOverride());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(`${__dirname}/public`));
 app.use(extParser({
     param: 'format',
     router: app.router
