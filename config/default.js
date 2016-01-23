@@ -8,7 +8,7 @@ module.exports = {
         url: 'http://localhost:7000/'
     },
     database: {
-        database: 'hinagataExpress_development',
+        database: 'hinagata_express_development',
         user: '',
         password: ''
     }

@@ -51,6 +51,8 @@ if ('development' == app.get('env')) {
 // =======================================================
 
 app.get('/', routes.index);
+app.get('/user', routes.user.index);
+app.post('/user', routes.user.create);
 
 
 module.exports = app;

@@ -1,0 +1,17 @@
+extends layout/content
+
+block content
+  .user
+    h2 create
+    form(action="/user", method="post")
+      p
+        label
+          | name: 
+          input(type="text", name="name", value="fnobi")
+      p
+        input(type="submit", value="create user")
+
+    h2 index
+    ul
+      each user in users
+        li= user.name
