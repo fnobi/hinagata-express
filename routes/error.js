@@ -1,9 +1,9 @@
-module.exports = function (err, req, res) {
-    var format = req.param('format');
+module.exports = (err, req, res) => {
+    const format = req.param('format');
 
     res.status(res.statusCode || 500);
 
-    var locals = {
+    const locals = {
         statusCode: res.statusCode,
         error: err || null
     };

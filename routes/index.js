@@ -1,9 +1,9 @@
-var config = require('config');
+const config = require('config');
 
-var handleError = require(__dirname + '/error');
+const handleError = require(`${__dirname}/error`);
 
 module.exports = {
-    index: function (req, res) {
+    index: (req, res) => {
         res.render('index');
     }
 };
