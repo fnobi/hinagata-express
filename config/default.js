@@ -6,10 +6,5 @@ module.exports = {
         title: 'hinagata-express',
         description: 'node.js service.',
         url: 'http://localhost:7000/'
-    },
-    database: {
-        database: 'hinagata_express_development',
-        user: '',
-        password: ''
     }
 };

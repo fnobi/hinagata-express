@@ -1,18 +1,13 @@
-var config = require('config');
-var Sequelize = require('sequelize');
+const Sequelize = require('sequelize');
+
+const env = process.env.NODE_ENV || 'development';
+const config = require('../config/sequelize.json')[env];
 
 module.exports = new Sequelize(
     config.database.database,
     config.database.user,
     config.database.password,
-    {
-        dialect: 'postgres',
-        pool: {
-            max: 5,
-            min: 0,
-            idle: 10000
-        }
-    }
+    config
 );
 
 

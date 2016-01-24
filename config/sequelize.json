@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "",
+    "password": "",
+    "database": "hinagata_express_development",
+    "dialect": "postgres",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  },
+  "test": {
+    "username": "",
+    "password": "",
+    "database": "hinagata_express_test",
+    "dialect": "postgres",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  },
+  "production": {
+    "username": "",
+    "password": "",
+    "database": "hinagata_express_production",
+    "dialect": "postgres",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "idle": 10000
+    }
+  }
+}
