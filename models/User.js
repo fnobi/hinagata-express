@@ -1,8 +1,13 @@
-var Sequelize = require('Sequelize');
-var database = require(`${__dirname}/database`);
-
-module.exports = database.define('user', {
-    name: {
-        type: Sequelize.STRING
+'use strict';
+module.exports = function(sequelize, DataTypes) {
+  var User = sequelize.define('User', {
+    name: DataTypes.STRING
+  }, {
+    classMethods: {
+      associate: function(models) {
+        // associations can be defined here
+      }
     }
-});
+  });
+  return User;
+};
