@@ -5,7 +5,7 @@
   "scripts": {
     "test": "NODE_ENV=test mocha --reporter spec",
     "prestart": "npm install",
-    "init-db": "sequelize init --config sequelize/config.json --migrations-path sequelize/migrations --seeders-path sequelize/seeders --url postgres://localhost/hinagata_express_development --force",
+    "migrate": "sequelize db:migrate --config config/sequelize.json",
     "start": "NODE_ENV=production forever start --sourceDir . --pidFile hinagata-express.example.com.pid -l hinagata-express.example.com.log --append server.js"
   },
   "engines": {
