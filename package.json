@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "scripts": {
     "test": "NODE_ENV=test mocha --reporter spec",
-    "prestart": "npm install",
-    "migrate": "sequelize db:migrate --config config/sequelize.json",
-    "start": "NODE_ENV=production forever start --sourceDir . --pidFile hinagata-express.example.com.pid -l hinagata-express.example.com.log --append server.js"
+    "prestart": "npm run migrate",
+    "start": "node server",
+    "migrate": "sequelize db:migrate --config config/sequelize.json"
   },
   "engines": {
     "node": ">=4.0.0"
