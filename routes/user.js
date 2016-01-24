@@ -14,7 +14,7 @@ module.exports = {
         User.create({
             name: name
         }).then(() => {
-            res.redirect('/');
+            res.redirect('/user');
         });
     }
 };
