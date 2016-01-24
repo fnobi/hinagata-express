@@ -6,7 +6,8 @@
     "test": "NODE_ENV=test mocha --reporter spec",
     "prestart": "npm run migrate",
     "start": "node server",
-    "migrate": "sequelize db:migrate --config config/sequelize.json"
+    "migrate": "sequelize db:migrate --config config/sequelize.json",
+    "create-model": "sequelize model:create --config config/sequelize.json"
   },
   "engines": {
     "node": ">=4.0.0"
